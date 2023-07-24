@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
+import getAllUsers from "@/lib/getAllUsers";
 
 export const metadata: Metadata = {
   title: "Users",
 };
 
-import React from "react";
-
 export default function UsersPage() {
+  const usersData: Promise<> = getAllUsers();
   return <div>page</div>;
 }
+
+// create a library function to get users
