@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 export default function UsersPage() {
-  const usersData: Promise<> = getAllUsers();
+  const usersData: Promise<User[]> = getAllUsers();
   return <div>page</div>;
 }
 
